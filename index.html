@@ -7,25 +7,32 @@
     <title>Agenda de contatos</title>
 </head>
 <body>
-    <h1>Agenda de Contatos</h1>
-
-    <form>
-        <input type="text" placeholder="Nome" required>
-        <input type="tel" placeholder="Telefone" required>
+    <header>
+        <h1>Agenda de Contatos</h1>
+    </header>
+    
+    <form id="form-contato">
+        <input id="nome-contato" type="text" placeholder="Nome" required>
+        <input id="numero-contato" type="tel" placeholder="Telefone" required>
         <button type="submit"> Adicionar +</button>
     </form>
 
     <table>
-        <tr>
-            <th>Nome</th>
-            <th>Contato</th>
-        </tr>
-        <tr>
-            <td>Ana Julia</td>
-            <td>6199875234</td>
-        </tr>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Contato</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ana Julia</td>
+                <td>6199875234</td>
+            </tr>
+        </tbody>
+        
     </table>
 
-    <script src="./script.js"></script>
+    <script src="./main.js"></script>
 </body>
 </html>
