@@ -1,9 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins&display=swap');
 
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 body{
@@ -23,30 +30,44 @@ h1{
     font-family: "Josefin Sans", sans-serif;
     font-size: 64px;
     font-weight: bold;
+    margin-bottom: 56px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 640px;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 56px;
+    gap: 8px;
 }
 
 form input{
-    font-size: 16px;
+    font-size: 18px;
     font-family: "Poppins", sans-serif;
     background-color: #F8E7A5;
     color: #203A63;
     border-radius: 8px;
     padding: 8px;
-    width: 240px;
-    border: #F6C84F, solid, 3px;
+    width: 100%;
+    border: #F6C84F solid 3px;
 }
 
 form button{
+
     font-family: "Poppins", sans-serif;
     font-weight: bold;
     font-size: 16px;
     border-radius: 8px;
     padding: 8px;
-    width: 140px;
+    width: 100%;
     background-color: #2E5F9E;
     color: #DDEBF3;
     border: #2E5F9E, solid, 3px;
-
+    cursor: pointer;
 }
 
 form button:hover{
@@ -54,3 +75,68 @@ form button:hover{
     color: #2E5F9E;
     background-color: #DDEBF3;
 }
+
+
+
+table{
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 8px;
+    border-collapse: collapse;
+    overflow: hidden;
+    color: #203A63;
+}
+
+table th{
+    font-family: "Josefin Sans", sans-serif;
+    background-color: #203A63;
+    color: #F8E7A5;
+    padding: 16px;
+    font-size: 24px;
+}
+table tr{
+    background-color: #DDEBF3;
+}
+
+table td{
+    padding: 16px 0;
+    text-align: center;
+    border-bottom: #F6C84F solid 2px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #F8E7A5; 
+}
+
+
+@media(max-width: 768px) {
+    
+    body {
+        margin: 32px 0px; 
+    }
+
+    h1 {
+        font-size: 36px;
+        margin-bottom: 32px;
+    }
+
+    form {
+        flex-direction: column; 
+        gap: 12px;
+    }
+
+    form input, 
+    form button {
+        width: 100%; 
+    }
+
+    table th {
+        font-size: 18px;
+        padding: 12px 8px;
+    }
+    
+    table td {
+        font-size: 14px;
+        padding: 12px 4px;
+    }
+    }
