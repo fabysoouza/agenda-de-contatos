@@ -23,6 +23,7 @@ body{
     font-family: "Poppins", sans-serif;
     margin: 40px;
     gap: 30px;
+    overflow: hidden;
 }
 
 h1{
@@ -108,6 +109,10 @@ tbody tr:nth-child(even) {
     background-color: #F8E7A5; 
 }
 
+footer{
+    margin-top: 64px;
+    color: #2E5F9E;
+}
 
 @media(max-width: 768px) {
     
